@@ -1,85 +1,124 @@
 ---
 layout: default
-title: 김기훈 | Data Engineer
+title: huni blog
 ---
 
 <style>
-.hero-wrap {
-  display: flex;
-  gap: 28px;
-  align-items: flex-start;
-  margin: 24px 0 16px;
+.blog-home {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 0 56px;
 }
-.hero-photo {
-  width: 220px;
-  max-width: 42vw;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-}
-.hero-info h2 {
+
+.blog-home h1 {
   margin: 0 0 8px;
 }
-.hero-info p {
-  margin: 4px 0;
+
+.blog-home .lead {
+  margin: 0;
+  color: #666;
 }
-@media (max-width: 760px) {
-  .hero-wrap {
-    flex-direction: column;
-  }
-  .hero-photo {
-    width: 100%;
-    max-width: 320px;
-  }
+
+.blog-home .quick-links {
+  margin: 18px 0 28px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.blog-home .quick-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.blog-home section {
+  margin-top: 34px;
+}
+
+.blog-home h2 {
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.blog-home ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.blog-home li {
+  margin: 8px 0;
+}
+
+.blog-home .muted {
+  color: #7a7a7a;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.blog-home .empty {
+  color: #777;
 }
 </style>
 
-# 김기훈 | Data Engineer
+<div class="blog-home">
+  <h1>huni blog</h1>
+  <p class="lead">카테고리별로 글을 모아보는 블로그 홈입니다.</p>
 
-<div class="hero-wrap">
-  <img class="hero-photo" src="{{ '/assets/profile-2026-02-15-183048.png' | relative_url }}" alt="프로필 이미지" />
-
-  <div class="hero-info">
-    <h2>Contact.</h2>
-    <p>Email. your-email@example.com</p>
-    <p>Phone. 010-0000-0000</p>
-
-    <h2>Channel.</h2>
-    <p>LinkedIn. <a href="https://www.linkedin.com/in/gihun-kim-01876323a/" target="_blank">gihun-kim-01876323a</a></p>
-    <p>GitHub. <a href="https://github.com/kkh1902" target="_blank">kkh1902</a></p>
+  <div class="quick-links">
+    <a href="{{ '/resume/' | relative_url }}">Resume</a>
+    <a href="{{ '/writing/work/engineer-resume/' | relative_url }}">Writing / Work</a>
   </div>
+
+  <section>
+    <h2>Latest Posts</h2>
+    {% if site.posts.size > 0 %}
+      <ul>
+        {% for post in site.posts limit: 10 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="muted">{{ post.date | date: "%Y-%m-%d" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="empty">아직 등록된 포스트가 없습니다.</p>
+    {% endif %}
+  </section>
+
+  {% assign work_pages = site.pages | where_exp: "p", "p.url contains '/writing/work/'" %}
+  <section>
+    <h2>Category: work</h2>
+    {% if work_pages.size > 0 %}
+      <ul>
+        {% for page in work_pages %}
+          <li>
+            <a href="{{ page.url | relative_url }}">{{ page.title | default: page.url }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="empty">work 카테고리 글이 없습니다.</p>
+    {% endif %}
+  </section>
+
+  {% assign writing_pages = site.pages | where_exp: "p", "p.url contains '/writing/'" %}
+  <section>
+    <h2>All Writing</h2>
+    {% if writing_pages.size > 0 %}
+      <ul>
+        {% for page in writing_pages %}
+          <li>
+            <a href="{{ page.url | relative_url }}">{{ page.title | default: page.url }}</a>
+            <span class="muted">{{ page.url }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="empty">등록된 writing 페이지가 없습니다.</p>
+    {% endif %}
+  </section>
 </div>
-
-## Introduce.
-
-I am an aspiring Data Engineer focused on strong fundamentals in data systems.
-데이터 파이프라인, 분산 처리, ML/LLM 애플리케이션을 지원하는 데이터 인프라에 관심이 있습니다.
-
-## Work Experience.
-
-### Metacode
-**Assessment Grader (Part-time)**  
-2026.01 - 현재 · 서울(재택)
-
-- Data Engineer Bootcamp 프로젝트 기반 과제 채점
-- Databricks/AWS 기반 데이터 엔지니어링 과제를 루브릭 기준으로 평가
-- 코드 품질, 구조, 실무 적용성 중심 피드백 제공
-
-### KCenC
-**Plumber (Contract)**  
-2024.01 - 2024.12 · 인천(대면)
-
-- 현장 배관 설치/유지보수 업무 지원
-- 안전 규정 준수 및 현장 팀 협업
-
-## Skill.
-
-- Data: SQL, Spark, Kafka, dbt, BigQuery, ETL, Data Modeling
-- Cloud/Platform: AWS, Databricks
-- Language: Python, SQL
-- Tooling: Git, GitHub, Linux
-
-## Education.
-
-- Dongseo University, Software Engineering (2018.03 - 2023.03, GPA 3.7)
-- MetaCode Data Engineer Bootcamp (2025.12)
-- SQLD (2022.06)

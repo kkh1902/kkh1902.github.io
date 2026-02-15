@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>이력서 - 이현섭</title>
-  <meta name="description" content="프론트엔드 엔지니어, 이현섭의 이력서입니다.">
+  <title>김기훈 | Data Engineer</title>
+  <meta name="description" content="데이터 엔지니어 김기훈의 이력서">
   <meta name="theme-color" content="#3a7bd5">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <style>
@@ -194,6 +194,18 @@
       font-size: 14px;
     }
 
+    .resume .row-left h3 a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .resume .row-left h3 a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
     .resume .project {
       margin-bottom: 30px;
       padding-bottom: 26px;
@@ -223,372 +235,225 @@
 </head>
 <body>
   <main class="resume">
-    <h1 id="반갑습니다">반갑습니다,</h1>
-<p>저는 이현섭입니다.</p>
+    <h1 id="huni--데이터-파이프라인을-설계하는-개발자">huni | 데이터 파이프라인을 설계하는 개발자</h1>
 
-<p class="lead">서울에서 7년차 웹 프론트엔드 엔지니어로 일하고 있으며 아름다운 인터페이스와 애니메이션을 구현하는 것을 좋아합니다. 개발자의 가치는 비즈니스 가치를 구현하는데서 나온다고 믿습니다. 주도적으로 업무를 진행할 수 있는 환경을 선호합니다.</p>
+<div class="hero-wrap">
+  <img class="intro-photo" src="/assets/profile.jpg" alt="프로필 이미지" />
+  <div class="hero-info">
+    <h2>Contact<span class="period-mark">.</span></h2>
+    <p>Email. <a href="mailto:hunjyhunji@gmail.com">hunjyhunji@gmail.com</a></p>
+    <p>Phone. 010-7296-9664</p>
 
-<section>
+    <h2>Channel<span class="period-mark">.</span></h2>
+    <p>Blog. <a href="https://kkh1902.tistory.com/" target="_blank">https://kkh1902.tistory.com/</a></p>
+    <p>GitHub. <a href="https://github.com/kkh1902" target="_blank">https://github.com/kkh1902</a></p>
+    <p>LinkedIn. <a href="https://www.linkedin.com/in/gihun-kim-01876323a/" target="_blank">https://www.linkedin.com/in/gihun-kim-01876323a/</a></p>
+  </div>
+</div>
+
+<p class="lead">데이터 파이프라인과 분산 처리 기반의 데이터 인프라를 설계하고 운영하는 데이터 엔지니어를 지향합니다. SQL/Spark/Kafka 기반 처리, 클라우드 환경에서의 ETL 구축, 분석/ML 활용을 위한 데이터 품질 관리에 관심이 많습니다.</p>
+
+<hr class="intro-divider" />
+
+<section class="after-intro">
   <h2>Work Experience<span class="period-mark">.</span></h2>
+
   <div class="row">
     <div class="row-left">
-      <h3>토스페이먼츠<span class="period-mark">.</span></h3>
-      <span class="role">Frontend Developer</span>
-      <span><time datetime="2020-08">2020. 08</time> - 현재</span>
+      <h3><a href="https://metacodes.co.kr/" target="_blank" rel="noopener noreferrer">Metacode</a></h3>
+      <span class="role">과제 채점자 (파트타임)</span>
+      <span><time datetime="2026-01">2026. 01</time> - 현재</span>
     </div>
     <div class="row-right">
       <div class="project">
-        <h4>토스페이먼츠 JavaScript SDK<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2020-08">2020. 08</time> - 현재</span>
+        <h4>Data Engineer Bootcamp 과제 채점<span class="period-mark">.</span></h4>
+        <span class="time"><time datetime="2026-01">2026. 01</time> - 현재</span>
         <h5>Description<span class="period-mark">.</span></h5>
-        <p>토스페이먼츠의 결제를 연동하기 위해 사용하는 JavaScript SDK를 만들고 유지보수하고 있습니다.</p>
+        <p>데이터 엔지니어링 실무 과제의 코드와 아키텍처를 평가하고 피드백을 제공합니다.</p>
         <h5>What did I do<span class="period-mark">.</span></h5>
         <ul>
-          <li>일반 결제 JavaScript SDK 구현</li>
-          <li>커넥트페이 JavaScript SDK 구현</li>
-          <li>npm 퍼블릭 패키지 배포</li>
+          <li>Databricks/AWS 기반 과제 루브릭 평가</li>
+          <li>SQL/ETL/모델링 품질 중심 코드 리뷰</li>
+          <li>실무 적용 관점의 개선 가이드 제시</li>
         </ul>
         <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, Jest, Rollup</p>
-      </div>
-
-      <div class="project">
-        <h4>토스페이먼츠 결제 연동 매뉴얼<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2020-08">2020. 08</time> - 현재</span>
-        <h5>Description<span class="period-mark">.</span></h5>
-        <p>토스페이먼츠 결제를 연동하기 위해서 참고할 수 있는 가이드 문서 제품, "<a href="https://docs.tosspayments.com/" rel="noopener noreferrer" target="_blank">토스페이먼츠 결제 연동 문서</a>"의 프론트엔드를 설계하고 유지보수 하고 있습니다.</p>
-        <h5>What did I do<span class="period-mark">.</span></h5>
-        <ul>
-          <li>토스페이먼츠 결제 연동 문서 초기 버전 구현 및 문서 본문 작성</li>
-          <li>결제 연동 문서 버전 2.0 구현 및 지속 개선</li>
-          <li>테크니컬 라이터와의 협업을 위한 MDX 기반 컨텐츠 관리</li>
-        </ul>
-        <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, React, Next.js, MDX</p>
-      </div>
-
-      <div class="project">
-        <h4>커넥트페이<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2020-10">2020. 10</time> - <time datetime="2021-07">2021. 07</time></span>
-        <h5>Description<span class="period-mark">.</span></h5>
-        <p>토스페이먼츠의 간편결제 구현 솔루션인 "커넥트페이"의 JavaScript SDK와 프론트엔드를 구현했습니다.</p>
-        <h5>What did I do<span class="period-mark">.</span></h5>
-        <ul>
-          <li>커넥트페이 JavaScript SDK 구현</li>
-          <li>커넥트페이 프론트엔드 구현</li>
-          <li>MessageChannel API를 이용한 SDK와 프론트엔드 UI의 실시간 통신</li>
-        </ul>
-        <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, React, Next.js, emotion, MessageChannel API</p>
+        <p>Databricks, AWS, SQL, Python</p>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="row-left">
-      <h3>비바리퍼블리카<span class="period-mark">.</span></h3>
-      <span class="role">Frontend Developer</span>
-      <span><time datetime="2018-12">2018. 12</time> - 2020. 08</span>
-    </div>
-    <div class="row-right">
-      <div class="project">
-        <h4>공통 라이브러리 기여<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2019-09">2019. 09</time> - <time datetime="2020-07">2020. 07</time></span>
-        <h5>Description<span class="period-mark">.</span></h5>
-        <p>TDS(Toss Design System, 토스 웹 서비스 대부분이 사용하는 React UI Framework)을 비롯하여 생산성을 위해 사용하고 있는 각종 사내 라이브러리를 유지보수, 개선했습니다.</p>
-        <h5>What did I do<span class="period-mark">.</span></h5>
-        <ul>
-          <li>앱과 연동되는 웹뷰 다크모드 구현</li>
-          <li>TDS 컴포넌트 인터페이스 개선, 각종 컴포넌트 신규 개발</li>
-          <li>하나의 거대한 라이브러리를 용도에 맞게 쪼개고 인터페이스 개선</li>
-        </ul>
-        <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, React, Next.js, Sass, Jest</p>
-      </div>
-
-      <div class="project">
-        <h4>GA Silo<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2019-07">2019. 07</time> - <time datetime="2020-07">2020. 07</time></span>
-        <h5>Description<span class="period-mark">.</span></h5>
-        <p>토스의 "내 보험 조회" 서비스를 개발하면서 보험 상담으로의 전환률 향상에 공헌하고 있습니다.</p>
-        <h5>What did I do<span class="period-mark">.</span></h5>
-        <ul>
-          <li>"내 보험 조회" 코드 베이스 개선, 레거시 마이그레이션</li>
-          <li>각종 A/B 테스트 구현을 통한 전환률 향상에 기여</li>
-        </ul>
-        <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, React, Next.js, emotion</p>
-      </div>
-
-      <div class="project">
-        <h4>PropTech Silo<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2019-03">2019. 03</time> - <time datetime="2019-07">2019. 06</time></span>
-        <h5>Description<span class="period-mark">.</span></h5>
-        <p>PropTech(부동산 테크)와 관련된 여러가지 소규모의 서비스를 개발했습니다.</p>
-        <h5>What did I do<span class="period-mark">.</span></h5>
-        <ul>
-          <li>"내가 살 아파트 찾기" 구현</li>
-          <li>"아파트 관리비 조회/납부" 구현</li>
-        </ul>
-        <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, React, Next.js, emotion</p>
-      </div>
-
-      <div class="project">
-        <h4>Growth Silo<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2018-12">2018. 12</time> - <time datetime="2019-02">2019. 02</time></span>
-        <h5>Description<span class="period-mark">.</span></h5>
-        <p>Growth Silo에서 토스의 성장에 도움이 될만한 아이디어를 구현했습니다. 팀 특성상, 소규모의 프로덕트를 빠르게 실행해보고 유저 반응을 본 뒤 다시 개편하여 내놓거나 아예 다른 아이템으로 전환하는 경우가 많아서 현재 서비스되고 있는 것은 없습니다.</p>
-        <h5>What did I do<span class="period-mark">.</span></h5>
-        <ul>
-          <li>"토스 머니백" 구현 (현재 서비스 되고 있지 않음)</li>
-          <li>"금융 생활 보고서" 구현 (현재 서비스 되고 있지 않음)</li>
-        </ul>
-        <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, React, MobX, Sass, Jest, Next.js</p>
-      </div>
-    </div>
-  </div>
+  <hr />
 
   <div class="row">
     <div class="row-left">
-      <h3>스튜디오씨드 코리아<span class="period-mark">.</span></h3>
-      <span class="role">Software Engineer</span>
-      <span><time datetime="2016-10">2016. 10</time> - <time datetime="2018-11">2018. 11</time></span>
+      <h3><a href="https://www.kcenc.co.kr/" target="_blank" rel="noopener noreferrer">KCenC</a></h3>
+      <span class="role">Plumber (Contract)</span>
+      <span><time datetime="2024-01">2024. 01</time> - <time datetime="2024-12">2024. 12</time></span>
     </div>
     <div class="row-right">
       <div class="project">
-        <h4>ProtoPie Enterprise<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2017-10">2017. 10</time> - <time datetime="2018-11">2018. 11</time></span>
+        <h4>현장 운영 및 협업 경험<span class="period-mark">.</span></h4>
+        <span class="time"><time datetime="2024-01">2024. 01</time> - <time datetime="2024-12">2024. 12</time></span>
         <h5>Description<span class="period-mark">.</span></h5>
-        <p>ProtoPie Studio와 연동되는 ProtoPie Cloud의 엔터프라이즈 버전의 프론트엔드 인터페이스를 개발했습니다. 프론트엔드 부분은 혼자 맡아 진행했으며, 3월 경에 1차적으로 릴리즈가 완료되어 여러 기업에 납품되었습니다.</p>
+        <p>현장 설치 및 유지보수 업무를 수행하며 안전 기준 준수와 팀 협업을 담당했습니다.</p>
         <h5>What did I do<span class="period-mark">.</span></h5>
         <ul>
-          <li>프론트엔드 기술환경 구성 및 기본 기능 구현</li>
-          <li>MobX, MobX State Tree를 사용한 스토어 디자인</li>
-          <li>React기반 컴포넌트 계층 구조 디자인</li>
-          <li>스토리북을 이용한 컴포넌트 기반 개발 도입</li>
-          <li>Jest 기반의 테스트 작성</li>
+          <li>현장 작업 프로세스 준수 및 일정 대응</li>
+          <li>다양한 이해관계자와의 커뮤니케이션 수행</li>
+          <li>문제 상황에서 우선순위 기반 대응</li>
         </ul>
         <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, React, MobX, styled-components, Storybook, Jest, React Router, GitLab, GitLab CI, Docker</p>
+        <p>Field Operations, Safety Process, Team Collaboration</p>
       </div>
-
-      <div class="project">
-        <h4>ProtoPie Share Page<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2017-04">2017. 04</time> - <time datetime="2018-11">2018. 11</time></span>
-        <h5>Description<span class="period-mark">.</span></h5>
-        <p>ProtoPie Studio에서 작업물을 업로드하면 웹으로 볼 수 있도록 해주는 <a href="https://share.protopie.io" target="_blank">Share Page</a>를 개발했습니다. 마찬가지로 혼자 진행한 프로젝트이며, 스펙 상 페이지 하나만 개발하면 되는 프로젝트였기 때문에 별도의 프론트엔드 라이브러리는 사용하지 않았습니다.</p>
-        <h5>What did I do<span class="period-mark">.</span></h5>
-        <ul>
-          <li>프론트엔드 / 백엔드 기술환경 세팅 및 전체 기능 구현</li>
-          <li>AWS Lambda를 이용한 Pie 파일 다운로드 기능 구현</li>
-          <li>Pie 파일 다운로드 성능 최적화</li>
-          <li>다양한 브라우저 환경 및 사이즈 대응</li>
-          <li>CI 및 ECS를 이용한 지속적인 Blue-Green 배포 환경 셋업</li>
-        </ul>
-        <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, Gulp, webpack, PostCSS, CSSNext, Express, AWS Lambda, AWS ECS, GitLab, GitLab CI, Docker</p>
-      </div>
-
-      <div class="project">
-        <h4>ProtoPie License Server<span class="period-mark">.</span></h4>
-        <span class="time"><time datetime="2016-12">2016. 12</time> - <time datetime="2018-11">2018. 11</time></span>
-        <h5>Description<span class="period-mark">.</span></h5>
-        <p>유저가 직접 ProtoPie Studio를 사용할 수 있는 라이센스를 결제하고, ProtoPie Studio와 연동해 라이센스 체크를 할 수 있는 서버 및 구매한 라이센스를 확인할 수 있는 <a href="https://my.protopie.io" target="_blank">웹페이지</a>를 만들었습니다. 시니어 개발자와 협업하여 두명으로 프로젝트를 진행하였습니다. 제가 맡은 역할은 주로 프론트엔드 인터페이스 코딩과, 결제 솔루션과의 연동이었습니다. 총 세 개의 솔루션(PayGate, PayPal, FastSpring)과 연동했던 경험이 있습니다. 때문에 백엔드 API 코딩도 겸하여 프로젝트를 진행했습니다.</p>
-        <h5>What did I do<span class="period-mark">.</span></h5>
-        <ul>
-          <li>프론트엔드 기술환경 세팅</li>
-          <li>프론트엔드 인터페이스 구현</li>
-          <li>서드파티 결제 솔루션 연동</li>
-          <li>CS처리를 위한 어드민 툴 개발</li>
-        </ul>
-        <h5>Tech Stack<span class="period-mark">.</span></h5>
-        <p>TypeScript, Gulp, webpack, Sass, jQuery, Express, Sequelize, MariaDB(MySQL), AWS ECS, GitLab, GitLab CI, Docker</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="row-left">
-      <h3>페스타<span class="period-mark">.</span></h3>
-      <span class="role">Lead Frontend Developer</span>
-      <span><time datetime="2017-12">2017. 12</time> - <time datetime="2018-06">2018. 06</time></span>
-    </div>
-    <div class="row-right">
-      <h4>페스타 프론트엔드<span class="period-mark">.</span></h4>
-      <h5>Description<span class="period-mark">.</span></h5>
-      <p>이벤트를 주최하거나 열려있는 이벤트에 참가할 수 있는 웹 서비스인 <a href="https://www.festa.io" target="_blank">페스타</a>를 개발하였습니다. 창업을 염두에 두고 진행한 사이드 프로젝트로서 본업과는 무관합니다. 약 6개월 간 초기버전의 프론트엔드를 대부분 개발했습니다. 체력과 동기부여의 문제로 중도에 그만두게 되었습니다.</p>
-      <h5>What did I Do<span class="period-mark">.</span></h5>
-      <ul>
-        <li>프론트엔드 기술환경 구성 및 기본 기능 구현</li>
-        <li>MobX, MobX State Tree를 사용한 스토어 디자인</li>
-        <li>React기반 컴포넌트 계층 구조 디자인</li>
-        <li>스토리북을 이용한 컴포넌트 기반 개발 도입</li>
-        <li>Jest 기반의 테스트 작성</li>
-      </ul>
-      <h5>Tech Stack<span class="period-mark">.</span></h5>
-      <p>TypeScript, React, MobX, styled-components, Storybook, Jest, React Router, GitLab</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="row-left">
-      <h3>로앤컴퍼니<span class="period-mark">.</span></h3>
-      <span class="role">Software Engineer</span>
-      <span><time datetime="2015-06">2015. 06.</time> - <time datetime="2016-09">2016. 09.</time></span>
-    </div>
-    <div class="row-right">
-      <h4>로톡 웹사이트<span class="period-mark">.</span></h4>
-      <span class="time"><time datetime="2015-06">2015. 06.</time> - <time datetime="2016-09">2016. 09.</time></span>
-      <h5>Description<span class="period-mark">.</span></h5>
-      <p>개발팀의 신입 팀원으로서 법률 O2O 서비스인 <a href="https://www.lawtalk.co.kr" target="_blank">로톡</a>의 프론트엔드와 백엔드를 개발했습니다. 기본적인 유지보수를 비롯해 비즈니스의 요구에 맞는 다양한 새로운 기능을 개발했습니다.</p>
-      <h5>What did I do<span class="period-mark">.</span></h5>
-      <ul>
-        <li>로톡 매니저 (변호사용 소프트웨어) UI 개편</li>
-        <li>변호사 프로필 페이지 UI 개편</li>
-        <li>변호사 포스트(CMS) 기능 개발</li>
-        <li>15분 전화상담 기능 개발</li>
-        <li>메인 페이지 UI 개편</li>
-        <li>광고 시스템 연동 및 개발 (DoubleClick For Publishers)</li>
-        <li>webpack 마이그레이션</li>
-      </ul>
-      <h5>Tech Stack<span class="period-mark">.</span></h5>
-      <p>CoffeeScript, Gulp, webpack, Sass, Jade, AngularJS(v1), Express, Mongoose, MongoDB</p>
     </div>
   </div>
 </section>
 
-<h2 id="other-experiences">Other Experiences.</h2>
+<section>
+  <h2>Projects<span class="period-mark">.</span></h2>
 
-<h3 id="gdg-korea-webtech">GDG Korea WebTech.</h3>
-<blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>Organizer</td>
-        <td>2018.08 - 현재</td>
-      </tr>
-    </tbody>
-  </table>
-</blockquote>
+  <div class="row">
+    <div class="row-left">
+      <h3>Data Pipeline Project</h3>
+      <span class="role">Personal / Bootcamp</span>
+      <span><time datetime="2025-10">2025. 10</time> - <time datetime="2025-12">2025. 12</time></span>
+    </div>
+    <div class="row-right">
+      <div class="project">
+        <h4>Batch ETL Pipeline 구축<span class="period-mark">.</span></h4>
+        <span class="time"><time datetime="2025-10">2025. 10</time> - <time datetime="2025-12">2025. 12</time></span>
+        <h5>Description<span class="period-mark">.</span></h5>
+        <p>데이터 수집부터 적재, 변환, 마트 구성까지 이어지는 배치 파이프라인을 설계하고 구현했습니다.</p>
+        <h5>What did I do<span class="period-mark">.</span></h5>
+        <ul>
+          <li>원천 데이터 스키마 분석 및 데이터 모델 설계</li>
+          <li>Airflow 기반 스케줄링과 장애 대응 로직 구성</li>
+          <li>분석용 테이블(스타 스키마) 구성 및 품질 점검</li>
+        </ul>
+        <h5>Tech Stack<span class="period-mark">.</span></h5>
+        <p>Python, SQL, Airflow, Spark, BigQuery, dbt</p>
+      </div>
+    </div>
+  </div>
 
-<p>구글의 웹 기술 기반 개발자 커뮤니티인 GDG Korea WebTech의 오거나이저를 맡고 있습니다.</p>
+  <div class="row">
+    <div class="row-left">
+      <h3>Streaming Project</h3>
+      <span class="role">Personal</span>
+      <span><time datetime="2026-01">2026. 01</time> - <time datetime="2026-02">2026. 02</time></span>
+    </div>
+    <div class="row-right">
+      <div class="project">
+        <h4>실시간 이벤트 처리 파이프라인<span class="period-mark">.</span></h4>
+        <span class="time"><time datetime="2026-01">2026. 01</time> - <time datetime="2026-02">2026. 02</time></span>
+        <h5>Description<span class="period-mark">.</span></h5>
+        <p>이벤트 스트림을 처리해 실시간 지표를 생성하고 적재하는 파이프라인을 구현했습니다.</p>
+        <h5>What did I do<span class="period-mark">.</span></h5>
+        <ul>
+          <li>Kafka 토픽 설계 및 소비자 처리 로직 구현</li>
+          <li>지연/중복 이벤트 처리 규칙 정의</li>
+          <li>대시보드 조회용 집계 테이블 최적화</li>
+        </ul>
+        <h5>Tech Stack<span class="period-mark">.</span></h5>
+        <p>Kafka, Spark, Python, SQL, Redshift</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h3 id="typescript-korea">TypeScript Korea.</h3>
-<blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>Organizer</td>
-        <td>2017.10 - 2018.12</td>
-      </tr>
-    </tbody>
-  </table>
-</blockquote>
+<section>
+  <h2>Skills<span class="period-mark">.</span></h2>
 
-<p>TypeScript 사용자 커뮤니티인 TypeScript Korea의 오거나이저를 맡았습니다.</p>
+  <div class="other">
+    <h3>Programming<span class="period-mark">.</span></h3>
+    <ul>
+      <li>Python, SQL, Bash</li>
+    </ul>
+  </div>
 
-<h3 id="blog">Blog.</h3>
-<blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>Author, Maintainer</td>
-        <td>2016.09 - 현재</td>
-      </tr>
-    </tbody>
-  </table>
-</blockquote>
+  <div class="other">
+    <h3>Data Processing<span class="period-mark">.</span></h3>
+    <ul>
+      <li>Apache Spark, Apache Kafka</li>
+    </ul>
+  </div>
 
-<p><a href="https://seob.dev/">seob.dev</a> 개인 블로그를 운영하고 있으며, 이전에는 <a href="https://hyunseob.github.io">DailyEngineering</a>를 운영했습니다.</p>
+  <div class="other">
+    <h3>Data Warehouse &amp; Modeling<span class="period-mark">.</span></h3>
+    <ul>
+      <li>BigQuery, Redshift, dbt</li>
+      <li>Star Schema, Data Modeling</li>
+    </ul>
+  </div>
 
-<h3 id="acm-icpc">ACM-ICPC.</h3>
-<blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>Honorable Mention</td>
-        <td>2013.11</td>
-      </tr>
-    </tbody>
-  </table>
-</blockquote>
+  <div class="other">
+    <h3>Orchestration<span class="period-mark">.</span></h3>
+    <ul>
+      <li>Apache Airflow, Kestra</li>
+    </ul>
+  </div>
 
-<p>학교 예선에서 좋은 성적을 거두고 지역 본선에 학교 대표로 진출했습니다.</p>
+  <div class="other">
+    <h3>Cloud &amp; Infrastructure<span class="period-mark">.</span></h3>
+    <ul>
+      <li>AWS (S3, EC2, IAM), GCP (BigQuery, GCS)</li>
+      <li>Docker, Terraform</li>
+    </ul>
+  </div>
 
-<h3 id="금오공과대학교">금오공과대학교.</h3>
-<blockquote>
-  <table>
-    <tbody>
-      <tr>
-        <td>컴퓨터소프트웨어공학과</td>
-        <td>2010.03 - 2018.02</td>
-      </tr>
-    </tbody>
-  </table>
-</blockquote>
+  <div class="other">
+    <h3>Storage<span class="period-mark">.</span></h3>
+    <ul>
+      <li>Parquet, Iceberg</li>
+    </ul>
+  </div>
+</section>
 
-<p>컴퓨터구조, 자료구조, 컴퓨터네트워크, 웹 프로그래밍 등의 과목을 이수했습니다.</p>
+<section>
+  <h2>Education<span class="period-mark">.</span></h2>
+  <div class="other">
+    <h3>동서대학교<span class="period-mark">.</span></h3>
+    <span class="role">Software Engineering</span>
+    <span class="time"><time datetime="2018-03">2018. 03</time> - <time datetime="2023-03">2023. 03</time> (GPA 3.7)</span>
+  </div>
+</section>
 
-<h2 id="skills">Skills.</h2>
+<section>
+  <h2>Certificates<span class="period-mark">.</span></h2>
 
-<h3 id="overall">Overall.</h3>
-<ul>
-  <li>아름다운 유저 인터페이스 및 미려한 애니메이션 구현을 좋아합니다.</li>
-  <li>항상 최신의 기술이 옳다고 여기지 않습니다. 상황에 따라 적절한 선택이 있다고 믿습니다.</li>
-  <li>필요한 경우 새로운 분야를 빠르게 탐색해 최적의 결과를 만들기 위해 노력합니다.</li>
-  <li>팀 프로세스 및 문화 개선 시도를 적극적으로 합니다.</li>
-</ul>
+  <div class="other">
+    <h3>MetaCode Data Engineer Bootcamp<span class="period-mark">.</span></h3>
+    <h4>MetaCode 데이터 엔지니어 부트캠프 수료증<span class="period-mark">.</span></h4>
+    <p>14주 동안 65시간의 강의와 프로젝트 기반 실습 과정을 이수했으며, 최종 프로젝트에서 우수한 성과를 달성했습니다.</p>
+    <p>발행일: 2025년 12월</p>
+    <p>Link : <a href="https://www.linkedin.com/in/gihun-kim-01876323a/overlay/Certifications/1243037488/treasury/?profileId=ACoAADuOblQBver1F8e_fiO9NHM1OLYJ9hf2R24" target="_blank">View credential</a></p>
+  </div>
 
-<h3 id="communication">Communication.</h3>
-<ul>
-  <li>직위 및 포지션에 관계없이 적극적으로 생각을 표현합니다.</li>
-  <li>지적 겸손함을 유지하기 위해 노력합니다.</li>
-  <li>커뮤니케이션은 적은 것보다 많은 것이 좋다고 믿습니다.</li>
-</ul>
+  <div class="other">
+    <h3>SQL 개발자(SQLD, SQL Developer)<span class="period-mark">.</span></h3>
+    <span class="role">한국데이터산업진흥원 로고</span>
+    <span class="role">한국데이터산업진흥원</span>
+    <span class="time">발행일: 2022년 6월</span>
+    <p>Link : <a href="https://www.linkedin.com/in/gihun-kim-01876323a/overlay/Certifications/1086321715/treasury/?profileId=ACoAADuOblQBver1F8e_fiO9NHM1OLYJ9hf2R24" target="_blank">View credential</a></p>
+  </div>
+</section>
 
-<h3 id="web">Web.</h3>
-<ul>
-  <li>Search Engine Optimization 경험이 있습니다.</li>
-  <li>Internet Explorer, Safari 포함 다양한 OS/브라우저 대응 경험이 있습니다.</li>
-  <li>모바일 브라우저 트러블 슈팅 경험이 많습니다.</li>
-</ul>
-
-<h3 id="javascript">JavaScript.</h3>
-<ul>
-  <li>JavaScript와 TypeScript에 능숙합니다.</li>
-  <li>CommonJS, ES Modules 모듈 시스템을 이해하고 적절한 도구를 활용합니다.</li>
-  <li>Node.js 생태계 툴링에 익숙합니다.</li>
-  <li>Yarn과 Yarn Berry 사용을 선호합니다.</li>
-</ul>
-
-<h3 id="react">React.</h3>
-<ul>
-  <li>React hooks를 능숙하게 사용하고, 함수형 컴포넌트 중심으로 개발합니다.</li>
-  <li>컴포넌트 디자인 패턴을 상황에 맞게 적용합니다.</li>
-  <li>PureComponent와 React.memo를 필요한 상황에만 사용합니다.</li>
-  <li>Storybook 기반 컴포넌트 주도 개발 경험이 있습니다.</li>
-  <li>Testing Library로 테스트 코드를 작성할 수 있습니다.</li>
-</ul>
-
-<h3 id="devops">DevOps.</h3>
-<ul>
-  <li>AWS S3, CloudFront, Lambda@Edge 기반 앱 레이어 구성 경험이 있습니다.</li>
-  <li>GitHub Actions, Travis, GitLab CI 구성 경험이 있습니다.</li>
-  <li>반복 업무 자동화를 위한 Node.js CLI 제작이 가능합니다.</li>
-</ul>
-
-<h2 id="contact">Contact.</h2>
-
-<ul>
-  <li><a href="mailto:mail@hyunseob.me">이메일</a></li>
-  <li><a href="https://seob.dev">블로그</a></li>
-  <li><a href="https://www.linkedin.com/in/hyunseoblee/">링크드인</a></li>
-  <li><a href="https://github.com/hyunseob">깃허브</a></li>
-  <li><a href="https://twitter.com/HyunSeob_">트위터</a></li>
-  <li><a href="https://facebook.com/hyunseob.lee.7">페이스북</a></li>
-</ul>
+<section>
+  <h2>Awards<span class="period-mark">.</span></h2>
+  <div class="other">
+    <h3>Red Dot Award: Brands &amp; Communication Design 2022 Winner<span class="period-mark">.</span></h3>
+    <span class="role">발행: Red Dot · 2022년 8월</span>
+    <span class="time">시상: 2022년 10월</span>
+    <p>Red Dot Award: Brands &amp; Communication Design 2022 부문 수상작입니다. 해당 수상은 2022년 10월 공식 발표 및 시상</p>
+    <p>Link : <a href="https://www.linkedin.com/in/gihun-kim-01876323a/overlay/Honor/1086615384/treasury/?profileId=ACoAADuOblQBver1F8e_fiO9NHM1OLYJ9hf2R24" target="_blank">View award</a></p>
+    <h5>What did I do<span class="period-mark">.</span></h5>
+    <ul>
+      <li>여행 중 불안을 줄이는 사용자 경험 중심의 브랜드 경험 컨셉 설계</li>
+      <li>핵심 사용자 흐름 정의 및 인터랙션 방향 수립</li>
+      <li>디자인 의도를 구현 가능한 형태로 구체화하여 프로젝트 완성도 향상</li>
+    </ul>
+  </div>
+</section>
 
   </main>
 </body>

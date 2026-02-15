@@ -3,100 +3,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>김기훈 | Data Engineer</title>
+  <title>huni blog</title>
   <meta name="description" content="Data Engineering Portfolio">
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
   <main>
     <style>
-.hero-wrap {
-  display: flex;
-  gap: 28px;
-  align-items: flex-start;
-  margin: 24px 0 16px;
+.blog-home {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 0 56px;
 }
-.hero-photo {
-  width: 220px;
-  max-width: 42vw;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-}
-.hero-info h2 {
+
+.blog-home h1 {
   margin: 0 0 8px;
 }
-.hero-info p {
-  margin: 4px 0;
+
+.blog-home .lead {
+  margin: 0;
+  color: #666;
 }
-@media (max-width: 760px) {
-  .hero-wrap {
-    flex-direction: column;
-  }
-  .hero-photo {
-    width: 100%;
-    max-width: 320px;
-  }
+
+.blog-home .quick-links {
+  margin: 18px 0 28px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.blog-home .quick-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.blog-home section {
+  margin-top: 34px;
+}
+
+.blog-home h2 {
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.blog-home ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.blog-home li {
+  margin: 8px 0;
+}
+
+.blog-home .muted {
+  color: #7a7a7a;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.blog-home .empty {
+  color: #777;
 }
 </style>
 
-<h1 id="김기훈--data-engineer">김기훈 | Data Engineer</h1>
+<div class="blog-home">
+  <h1>huni blog</h1>
+  <p class="lead">카테고리별로 글을 모아보는 블로그 홈입니다.</p>
 
-<div class="hero-wrap">
-  <img class="hero-photo" src="/assets/profile-2026-02-15-183048.png" alt="프로필 이미지" />
-
-  <div class="hero-info">
-    <h2>Contact.</h2>
-    <p>Email. your-email@example.com</p>
-    <p>Phone. 010-0000-0000</p>
-
-    <h2>Channel.</h2>
-    <p>LinkedIn. <a href="https://www.linkedin.com/in/gihun-kim-01876323a/" target="_blank">gihun-kim-01876323a</a></p>
-    <p>GitHub. <a href="https://github.com/kkh1902" target="_blank">kkh1902</a></p>
+  <div class="quick-links">
+    <a href="/resume/">Resume</a>
+    <a href="/writing/work/engineer-resume/">Writing / Work</a>
   </div>
+
+  <section>
+    <h2>Latest Posts</h2>
+    
+      <ul>
+        
+          <li>
+            <a href="/2026/01/21/first-post.html">첫 포스트</a>
+            <span class="muted">2026-01-21</span>
+          </li>
+        
+      </ul>
+    
+  </section>
+
+  
+  <section>
+    <h2>Category: work</h2>
+    
+      <ul>
+        
+          <li>
+            <a href="/writing/work/engineer-resume/">개발자 이력서 작성하기 (feat. 이력서 공개)</a>
+          </li>
+        
+      </ul>
+    
+  </section>
+
+  
+  <section>
+    <h2>All Writing</h2>
+    
+      <ul>
+        
+          <li>
+            <a href="/writing/work/engineer-resume/">개발자 이력서 작성하기 (feat. 이력서 공개)</a>
+            <span class="muted">/writing/work/engineer-resume/</span>
+          </li>
+        
+      </ul>
+    
+  </section>
 </div>
-
-<h2 id="introduce">Introduce.</h2>
-
-<p>I am an aspiring Data Engineer focused on strong fundamentals in data systems.
-데이터 파이프라인, 분산 처리, ML/LLM 애플리케이션을 지원하는 데이터 인프라에 관심이 있습니다.</p>
-
-<h2 id="work-experience">Work Experience.</h2>
-
-<h3 id="metacode">Metacode</h3>
-<p><strong>Assessment Grader (Part-time)</strong><br />
-2026.01 - 현재 · 서울(재택)</p>
-
-<ul>
-  <li>Data Engineer Bootcamp 프로젝트 기반 과제 채점</li>
-  <li>Databricks/AWS 기반 데이터 엔지니어링 과제를 루브릭 기준으로 평가</li>
-  <li>코드 품질, 구조, 실무 적용성 중심 피드백 제공</li>
-</ul>
-
-<h3 id="kcenc">KCenC</h3>
-<p><strong>Plumber (Contract)</strong><br />
-2024.01 - 2024.12 · 인천(대면)</p>
-
-<ul>
-  <li>현장 배관 설치/유지보수 업무 지원</li>
-  <li>안전 규정 준수 및 현장 팀 협업</li>
-</ul>
-
-<h2 id="skill">Skill.</h2>
-
-<ul>
-  <li>Data: SQL, Spark, Kafka, dbt, BigQuery, ETL, Data Modeling</li>
-  <li>Cloud/Platform: AWS, Databricks</li>
-  <li>Language: Python, SQL</li>
-  <li>Tooling: Git, GitHub, Linux</li>
-</ul>
-
-<h2 id="education">Education.</h2>
-
-<ul>
-  <li>Dongseo University, Software Engineering (2018.03 - 2023.03, GPA 3.7)</li>
-  <li>MetaCode Data Engineer Bootcamp (2025.12)</li>
-  <li>SQLD (2022.06)</li>
-</ul>
 
   </main>
 </body>
