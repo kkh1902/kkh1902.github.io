@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="theme-color" content="#3a7bd5">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <style>
+    :root {
+      --text: #151515;
+      --muted: #656565;
+      --line: #e8e8e8;
+      --accent: #2f6fcb;
+      --bg: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+      word-break: keep-all;
+    }
+
+    .resume {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 56px 20px 96px;
+    }
+
+    .resume h1,
+    .resume h2,
+    .resume h3,
+    .resume h4,
+    .resume h5,
+    .resume h6 {
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    .resume h1 {
+      font-size: 42px;
+      margin-bottom: 18px;
+    }
+
+    .resume h2 {
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    .resume h3 {
+      font-size: 24px;
+      margin-top: 26px;
+      margin-bottom: 6px;
+    }
+
+    .resume h4 {
+      font-size: 18px;
+      margin-top: 12px;
+      margin-bottom: 2px;
+    }
+
+    .resume h5 {
+      font-size: 16px;
+      margin-top: 14px;
+      margin-bottom: 6px;
+      color: var(--muted);
+    }
+
+    .resume p,
+    .resume ul {
+      margin: 0;
+    }
+
+    .resume p + p,
+    .resume ul + p,
+    .resume p + ul,
+    .resume ul + ul {
+      margin-top: 8px;
+    }
+
+    .resume ul { padding-left: 20px; }
+
+    .resume hr {
+      border: 0;
+      border-top: 1px dashed var(--line);
+      margin: 18px 0;
+    }
+
+    .resume blockquote {
+      margin: 6px 0 12px;
+      padding: 0;
+      border-left: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .resume a {
+      color: var(--accent);
+      text-underline-offset: 2px;
+    }
+
+    .resume .lead {
+      font-size: 18px;
+      color: #303030;
+    }
+
+    .resume .intro-divider {
+      margin: 26px 0 28px;
+      border: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .resume section.after-intro {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .resume .intro-photo-wrap {
+      margin: 14px 0 18px;
+    }
+
+    .resume .hero-wrap {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      margin: 18px 0 24px;
+    }
+
+    .resume .hero-info h2 {
+      margin: 0 0 8px;
+      padding: 0;
+      border: 0;
+      font-size: 24px;
+    }
+
+    .resume .hero-info p {
+      margin: 6px 0;
+      line-height: 1.6;
+    }
+
+    .resume .hero-info h2:not(:first-child) {
+      margin-top: 18px;
+    }
+
+    .resume .hero-wrap + .lead {
+      margin-top: 4px;
+    }
+
+    .resume .intro-photo {
+      width: 220px;
+      max-width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      display: block;
+    }
+
+    .resume section {
+      margin-top: 56px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+
+    .resume section:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .resume .period-mark {
+      color: var(--accent);
+    }
+
+    .resume .row {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 28px;
+      margin-bottom: 42px;
+    }
+
+    .resume .row-left span,
+    .resume .time,
+    .resume .role {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .resume .project {
+      margin-bottom: 30px;
+      padding-bottom: 26px;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .resume .project:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    @media (max-width: 860px) {
+      .resume { padding-top: 34px; }
+      .resume h1 { font-size: 34px; }
+      .resume h2 { font-size: 27px; }
+      .resume h3 { font-size: 21px; }
+      .resume .hero-wrap {
+        flex-direction: column;
+      }
+      .resume .row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    {{ content }}
+  </main>
+</body>
+</html>
