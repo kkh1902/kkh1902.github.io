@@ -30,7 +30,7 @@
     .resume {
       max-width: 980px;
       margin: 0 auto;
-      padding: 56px 20px 96px;
+      padding: 72px 20px 96px;
     }
 
     .resume h1,
@@ -46,13 +46,18 @@
 
     .resume h1 {
       font-size: 42px;
-      margin-bottom: 18px;
+      margin-bottom: 50px;
     }
 
     .resume h2 {
       font-size: 30px;
       margin-top: 0;
       margin-bottom: 24px;
+    }
+
+    .resume section > h2 {
+      margin-bottom: 34px;
+      color: #0064FF;
     }
 
     .resume h3 {
@@ -108,7 +113,7 @@
     }
 
     .resume .lead {
-      font-size: 18px;
+      font-size: inherit;
       color: #303030;
     }
 
@@ -130,7 +135,7 @@
 
     .resume .hero-wrap {
       display: flex;
-      gap: 32px;
+      gap: 50px;
       align-items: flex-start;
       margin: 18px 0 24px;
     }
@@ -140,6 +145,10 @@
       padding: 0;
       border: 0;
       font-size: 24px;
+    }
+
+    .resume .hero-info {
+      margin-top: 20px;
     }
 
     .resume .hero-info p {
@@ -175,8 +184,18 @@
       border-top: 0;
     }
 
+    .resume section.after-intro {
+      margin-top: 56px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+
     .resume .period-mark {
       color: var(--accent);
+    }
+
+    .resume .awards-title {
+      color: #0064FF;
     }
 
     .resume .row {
@@ -201,6 +220,11 @@
       transition: border-color 0.15s ease, color 0.15s ease;
     }
 
+    .resume .row-left h3,
+    .resume .row-right .project > h4 {
+      margin-top: 0;
+    }
+
     .resume .row-left h3 a:hover {
       color: var(--accent);
       border-bottom-color: var(--accent);
@@ -216,6 +240,17 @@
       margin-bottom: 0;
       padding-bottom: 0;
       border-bottom: 0;
+    }
+
+    .resume .projects-section .row + .row {
+      border-top: 1px dashed var(--line);
+      padding-top: 28px;
+    }
+
+    .resume .other-experience-section .other + .other {
+      border-top: 1px dashed var(--line);
+      margin-top: 20px;
+      padding-top: 20px;
     }
 
     @media (max-width: 860px) {
