@@ -211,4 +211,10 @@ permalink: /resume/
 
 <section>
   <h2>Class<span class="period-mark">.</span></h2>
+  <div class="other">
+    <h3>AWS Cloud Practitioner Exam Prep</h3>
+    <p>Cloud fundamentals, core services, pricing models</p>
+    <span class="time">2025.11</span>
+    <p>Link : <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/BGIVR512W8PK" target="_blank">View Class</a></p>
+  </div>
 </section>
