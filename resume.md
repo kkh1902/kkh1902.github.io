@@ -244,3 +244,7 @@ permalink: /resume/
     <p>Link : <a href="https://www.linkedin.com/in/gihun-kim-01876323a/overlay/Honor/1086615384/treasury/?profileId=ACoAADuOblQBver1F8e_fiO9NHM1OLYJ9hf2R24" target="_blank">View award</a></p>
   </div>
 </section>
+
+<section>
+  <h2>Class<span class="period-mark">.</span></h2>
+</section>
