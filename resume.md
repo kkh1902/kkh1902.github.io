@@ -34,13 +34,12 @@ permalink: /resume/
   <div class="row">
     <div class="row-left">
       <h3><a href="https://metacodes.co.kr/" target="_blank" rel="noopener noreferrer">Metacode</a></h3>
-      <span class="role">과제 채점자 (파트타임)</span>
+      <span class="role">과제 채점 및 코드 리뷰</span>
       <span><time datetime="2026-01">2026. 01</time> - 현재</span>
     </div>
     <div class="row-right">
       <div class="project">
-        <h4>Data Engineer Bootcamp 과제 채점</h4>
-        <span class="time"><time datetime="2026-01">2026. 01</time> - 현재</span>
+        <h4>Data Engineer 4기 과제 채점 및 코드 리뷰</h4>
         <h5>Description</h5>
         <p>데이터 엔지니어링 실무 과제의 코드와 아키텍처를 평가하고 피드백을 제공합니다.</p>
         <h5>What did I do</h5>
@@ -50,7 +49,7 @@ permalink: /resume/
           <li>실무 적용 관점의 개선 가이드 제시</li>
         </ul>
         <h5>Tech Stack</h5>
-        <p>Databricks, AWS, SQL, Python</p>
+        <p>Databricks, AWS, Docker, Kubernetes, Kafka, Airflow, Git, SQL, Python</p>
       </div>
     </div>
   </div>
@@ -83,18 +82,16 @@ permalink: /resume/
 </section>
 
 <section class="projects-section">
-  <h2>Projects<span class="period-mark">.</span></h2>
+  <h2>Project<span class="period-mark">.</span></h2>
 
   <div class="row">
     <div class="row-left">
       <h3>Data Pipeline Project</h3>
-      <span class="role">Personal / Bootcamp</span>
       <span><time datetime="2025-10">2025. 10</time> - <time datetime="2025-12">2025. 12</time></span>
     </div>
     <div class="row-right">
       <div class="project">
         <h4>Batch ETL Pipeline 구축</h4>
-        <span class="time"><time datetime="2025-10">2025. 10</time> - <time datetime="2025-12">2025. 12</time></span>
         <h5>Description</h5>
         <p>데이터 수집부터 적재, 변환, 마트 구성까지 이어지는 배치 파이프라인을 설계하고 구현했습니다.</p>
         <h5>What did I do</h5>
@@ -105,6 +102,7 @@ permalink: /resume/
         </ul>
         <h5>Tech Stack</h5>
         <p>Python, SQL, Airflow, Spark, BigQuery, dbt</p>
+        <p>Link : <a href="https://github.com/" target="_blank">View project</a></p>
       </div>
     </div>
   </div>
@@ -112,13 +110,11 @@ permalink: /resume/
   <div class="row">
     <div class="row-left">
       <h3>Streaming Project</h3>
-      <span class="role">Personal</span>
       <span><time datetime="2026-01">2026. 01</time> - <time datetime="2026-02">2026. 02</time></span>
     </div>
     <div class="row-right">
       <div class="project">
         <h4>실시간 이벤트 처리 파이프라인</h4>
-        <span class="time"><time datetime="2026-01">2026. 01</time> - <time datetime="2026-02">2026. 02</time></span>
         <h5>Description</h5>
         <p>이벤트 스트림을 처리해 실시간 지표를 생성하고 적재하는 파이프라인을 구현했습니다.</p>
         <h5>What did I do</h5>
@@ -129,65 +125,24 @@ permalink: /resume/
         </ul>
         <h5>Tech Stack</h5>
         <p>Kafka, Spark, Python, SQL, Redshift</p>
+        <p>Link : <a href="https://github.com/" target="_blank">View project</a></p>
       </div>
     </div>
   </div>
 </section>
 
 <section>
-  <h2>Skills<span class="period-mark">.</span></h2>
+  <h2>Skill<span class="period-mark">.</span></h2>
 
   <div class="other">
-    <h3>Programming</h3>
     <ul>
-      <li>Python, SQL, Bash</li>
+      <li>Programming: Python, SQL, Bash</li>
+      <li>Data Processing & Streaming: Apache Spark, Apache Kafka</li>
+      <li>Data Warehouse & Modeling: BigQuery, Amazon Redshift, dbt, Star Schema, Data Modeling</li>
+      <li>Orchestration: Apache Airflow, Kestra</li>
+      <li>Cloud & Infrastructure: AWS (S3, EC2, IAM), GCP (BigQuery, GCS), Docker, Terraform</li>
+      <li>Storage & Table Format: Parquet, Apache Iceberg</li>
     </ul>
-  </div>
-
-  <div class="other">
-    <h3>Data Processing</h3>
-    <ul>
-      <li>Apache Spark, Apache Kafka</li>
-    </ul>
-  </div>
-
-  <div class="other">
-    <h3>Data Warehouse & Modeling</h3>
-    <ul>
-      <li>BigQuery, Redshift, dbt</li>
-      <li>Star Schema, Data Modeling</li>
-    </ul>
-  </div>
-
-  <div class="other">
-    <h3>Orchestration</h3>
-    <ul>
-      <li>Apache Airflow, Kestra</li>
-    </ul>
-  </div>
-
-  <div class="other">
-    <h3>Cloud & Infrastructure</h3>
-    <ul>
-      <li>AWS (S3, EC2, IAM), GCP (BigQuery, GCS)</li>
-      <li>Docker, Terraform</li>
-    </ul>
-  </div>
-
-  <div class="other">
-    <h3>Storage</h3>
-    <ul>
-      <li>Parquet, Iceberg</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Education<span class="period-mark">.</span></h2>
-  <div class="other">
-    <h3>동서대학교</h3>
-    <span class="role">Software Engineering</span>
-    <span class="time"><time datetime="2018-03">2018. 03</time> - <time datetime="2023-03">2023. 03</time> (GPA 3.7)</span>
   </div>
 </section>
 
@@ -218,7 +173,7 @@ permalink: /resume/
 </section>
 
 <section>
-  <h2>Certificates<span class="period-mark">.</span></h2>
+  <h2>Certificate<span class="period-mark">.</span></h2>
 
   <div class="other">
     <h3>SQL 개발자(SQLD, SQL Developer)</h3>
@@ -229,7 +184,7 @@ permalink: /resume/
 </section>
 
 <section>
-  <h2 class="awards-title">Awards<span class="period-mark">.</span></h2>
+  <h2 class="awards-title">Award<span class="period-mark">.</span></h2>
   <div class="other">
     <h3>Red Dot Award: Brands &amp; Communication Design 2022 Winner</h3>
     <span class="role">Red Dot</span>
@@ -242,6 +197,15 @@ permalink: /resume/
       <li>디자인 의도를 구현 가능한 형태로 구체화하여 프로젝트 완성도 향상</li>
     </ul>
     <p>Link : <a href="https://www.linkedin.com/in/gihun-kim-01876323a/overlay/Honor/1086615384/treasury/?profileId=ACoAADuOblQBver1F8e_fiO9NHM1OLYJ9hf2R24" target="_blank">View award</a></p>
+  </div>
+</section>
+
+<section>
+  <h2>Education<span class="period-mark">.</span></h2>
+  <div class="other">
+    <ul>
+      <li>2018.03~2023.03 동서대학교 소프트웨어학과</li>
+    </ul>
   </div>
 </section>
 
