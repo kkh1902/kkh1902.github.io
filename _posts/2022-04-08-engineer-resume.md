@@ -1,7 +1,8 @@
 ---
-layout: default
-title: 개발자 이력서 작성하기 (feat. 이력서 공개)
-permalink: /writing/work/engineer-resume/
+title: "개발자 이력서 작성하기 (feat. 이력서 공개)"
+date: 2022-04-08 12:00:00 +0900
+categories: [Writing, Work]
+tags: [resume, career]
 ---
 
 # 개발자 이력서 작성하기 (feat. 이력서 공개)
