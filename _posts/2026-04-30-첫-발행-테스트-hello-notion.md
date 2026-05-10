@@ -7,6 +7,7 @@ categories:
 tags:
 - test
 - notion
+vault_synced: true
 ---
 
 # 첫 발행 테스트

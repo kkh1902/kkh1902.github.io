@@ -8,6 +8,7 @@ tags:
 - career
 - resume
 - guide
+vault_synced: true
 ---
 
 ## 한 줄 요약
