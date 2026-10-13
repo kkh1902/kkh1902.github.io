@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+import { TAXONOMY } from '../consts';
+
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+
+function count(categoryKey: string, subKey?: string) {
+  return posts.filter(
+    (p) => p.data.category === categoryKey && (!subKey || p.data.subcategory === subKey)
+  ).length;
+}
+---
+
+<aside class="sidebar">
+  <div class="profile">
+    <img class="avatar" src="/profile.jpg" alt="김기훈" />
+    <p class="name">김기훈</p>
+    <p class="tagline">AI 엔지니어 · kkh1902</p>
+  </div>
+
+  <nav class="side-nav">
+    <a href="/">홈</a>
+    <a href="/blog/">전체 글</a>
+    <a href="/about/">소개</a>
+  </nav>
+
+  <nav class="side-categories">
+    <p class="side-heading">카테고리</p>
+    <ul>
+      {
+        TAXONOMY.map((cat) => (
+          <li>
+            <a href={`/category/${cat.key}/`}>
+              <span>{cat.label}</span>
+              <span class="count">{count(cat.key)}</span>
+            </a>
+            {cat.children && (
+              <ul class="sub">
+                {cat.children.map((sub) => (
+                  <li>
+                    <a href={`/category/${cat.key}/${sub.key}/`}>
+                      <span>{sub.label}</span>
+                      <span class="count">{count(cat.key, sub.key)}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  <div class="side-links">
+    <a href="https://github.com/kkh1902" target="_blank" rel="noopener">GitHub</a>
+    <a href="/rss.xml">RSS</a>
+  </div>
+</aside>

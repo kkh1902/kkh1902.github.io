@@ -8,7 +8,10 @@ const blog = defineCollection({
     description: z.string(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
-    category: z.enum(['ai-dev', 'projects', 'career']),
+    category: z.enum(['ai-dev', 'cs', 'projects', 'career']),
+    subcategory: z
+      .enum(['algorithm', 'data-structure', 'database', 'network', 'os'])
+      .optional(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),

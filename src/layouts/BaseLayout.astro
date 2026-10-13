@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Sidebar from '../components/Sidebar.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 interface Props {
@@ -25,27 +26,20 @@ const pageTitle = title ? `${title} · ${SITE_TITLE}` : SITE_TITLE;
     <meta property="og:type" content="website" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrap">
-        <a class="brand" href="/">huni.log</a>
-        <nav>
-          <a href="/blog/">전체 글</a>
-          <a href="/category/ai-dev/">AI 개발</a>
-          <a href="/category/projects/">프로젝트</a>
-          <a href="/category/career/">커리어</a>
-          <a href="/about/">소개</a>
-        </nav>
+    <div class="layout">
+      <Sidebar />
+      <div class="content-col">
+        <main>
+          <div class="wrap">
+            <slot />
+          </div>
+        </main>
+        <footer>
+          <div class="wrap">
+            &copy; {new Date().getFullYear()} 김기훈 (kkh1902) · <a href="/rss.xml">RSS</a>
+          </div>
+        </footer>
       </div>
-    </header>
-    <main>
-      <div class="wrap">
-        <slot />
-      </div>
-    </main>
-    <footer>
-      <div class="wrap">
-        &copy; {new Date().getFullYear()} 김기훈 (kkh1902) · <a href="/rss.xml">RSS</a>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>
