@@ -16,10 +16,10 @@ timezone: Asia/Seoul
 
 title: huni blog # the main title
 
-tagline: Data Engineering Portfolio # it will display as the subtitle
+tagline: AI Engineer Portfolio # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  데이터 엔지니어링 학습 기록과 포트폴리오.
+  AI 엔지니어링 학습 기록과 포트폴리오.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
