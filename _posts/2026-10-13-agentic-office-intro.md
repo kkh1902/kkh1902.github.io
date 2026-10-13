@@ -12,7 +12,7 @@ mermaid: true
 
 ![Agentic_office 개념 일러스트](/assets/img/posts/agentic-office-intro/header.png)
 
-## 한 줄 결론
+## 한 줄
 
 Agentic_office는 콘텐츠 제작·업무 자동화를 담당하는 수십 개의 AI 에이전트를
 "부서"로 묶어 1인 체제로 운영하는 로컬 가상 사무실이다.

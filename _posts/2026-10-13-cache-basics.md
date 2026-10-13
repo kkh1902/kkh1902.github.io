@@ -11,7 +11,7 @@ tags:
 
 ![캐시 개념 일러스트](/assets/img/posts/cache-basics/header.png)
 
-## 한 줄 결론
+## 한 줄
 
 캐시는 "매번 계산하지 않고, 자주 쓰는 결과를 가까운 곳에 미리 보관해두는 것"이다.
 

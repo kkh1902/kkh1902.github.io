@@ -13,7 +13,7 @@ tags:
 
 ![2026년 10월 한국 AI 대회 지도](/assets/img/posts/korea-ai-competitions-2026-10/header.png)
 
-## 한 줄 결론
+## 한 줄
 
 국내는 "항상 열려 있는 데이콘류"와 "연 1회 공고 뜨는 대기업/정부 공모전"으로,
 해외는 "상시 운영되는 Kaggle"과 "분기마다 터지는 기업 후원 해커톤(Devpost)"으로

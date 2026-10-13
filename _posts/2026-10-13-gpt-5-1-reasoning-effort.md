@@ -13,7 +13,7 @@ tags:
 
 ![GPT와 Claude가 각자 다이얼을 돌려 생각의 양을 조절하는 모습](/assets/img/posts/gpt-5-1-reasoning-effort/header.png)
 
-## 한 줄 결론
+## 한 줄
 
 GPT-5.1과 Claude는 둘 다 "얼마나 깊게 생각할지"를 API 파라미터로 조절하게 해주는데,
 OpenAI는 `reasoning_effort`라는 단계값(none/low/medium/high)으로, Anthropic은
