@@ -1,6 +1,6 @@
 ---
 title: "스킬·플러그인·MCP·서브에이전트, 뭐가 다를까"
-date: '2026-10-13 16:00:00 +0900'
+date: '2026-10-13 03:30:00 +0900'
 categories:
 - AI
 - Agent Engineering

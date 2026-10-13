@@ -1,6 +1,6 @@
 ---
 title: "자주 쓰는 Claude Code CLI 플래그와 스킬이 안 보일 때 확인할 것"
-date: '2026-10-13 13:00:00 +0900'
+date: '2026-10-13 02:00:00 +0900'
 categories:
 - AI
 - Agent Engineering

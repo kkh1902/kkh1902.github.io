@@ -1,6 +1,6 @@
 ---
 title: "Claude API 비용을 줄이는 4가지 레버"
-date: '2026-10-13 11:00:00 +0900'
+date: '2026-10-13 01:00:00 +0900'
 categories:
 - AI
 - Claude

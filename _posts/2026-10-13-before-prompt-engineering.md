@@ -1,6 +1,6 @@
 ---
 title: "프롬프트를 고치기 전에 먼저 확인할 것"
-date: '2026-10-13 09:00:00 +0900'
+date: '2026-10-13 00:00:00 +0900'
 categories:
 - AI
 - Prompt Engineering

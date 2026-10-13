@@ -1,6 +1,6 @@
 ---
 title: "Blender를 AI로 조작해보기: MCP for Blender 사용기"
-date: '2026-10-13 15:00:00 +0900'
+date: '2026-10-13 03:00:00 +0900'
 categories:
 - AI
 - MCP

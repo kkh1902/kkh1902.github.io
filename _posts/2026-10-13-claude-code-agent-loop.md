@@ -1,6 +1,6 @@
 ---
 title: "Claude Code는 내부적으로 어떻게 동작하는가"
-date: '2026-10-13 12:00:00 +0900'
+date: '2026-10-13 01:30:00 +0900'
 categories:
 - AI
 - Agent Engineering
