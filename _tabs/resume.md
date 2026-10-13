@@ -134,7 +134,3 @@ DataTalks.Club DEZoomcamp 커리큘럼을 통해 데이터 엔지니어링 파�
 ## Class
 
 - **AWS Cloud Practitioner Exam Prep** (2025.11) — Cloud fundamentals, core services, pricing models. [View](https://www.coursera.org/account/accomplishments/specialization/certificate/BGIVR512W8PK)
-
-## Education
-
-- 2018.03 ~ 2023.03 동서대학교 소프트웨어학과
