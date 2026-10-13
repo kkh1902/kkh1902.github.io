@@ -30,7 +30,9 @@
   overflow: hidden;
 
   .highlight,
-  .highlight .w {
+  .highlight .w,
+  .highlight code,
+  .highlight pre {
     background-color: #282a36 !important;
     color: #f8f8f2 !important;
   }
