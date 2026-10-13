@@ -43,9 +43,10 @@ CLI(ChatGPT 구독 로그인)로 생성한다 — Agentic_office 저장소의 `s
   `tech_blog_posted: false`인 노트를 포스트로 변환. 변환 후 그 노트의 속성을
   `tech_blog_posted: true` + `tech_blog_post: "<URL>"`로 갱신한다.
 - **Agent Engineering** — RAG·Vector DB·Graph DB 등 에이전트 엔지니어링 학습 내용.
-- **CS 기초** — 한국 개발자 면접 준비용 공개 GitHub 레포(예:
-  `JaeYeopHan/Interview_Question_for_Beginner` 계열)를 참고해 자료구조·알고리즘·OS·
-  네트워크·DB 카테고리로 재구성해서 쓴다. 원문을 그대로 베끼지 않고 본인 언어로 재작성.
+- **CS 기초** — `gyoogle/tech-interview-for-developer`(★17.6k, 2026-10-13 확정) 레포의
+  목차(Computer Architecture / Data Structure / Database / Network / Operating System /
+  Software Engineering 등)를 참고해 주제를 고르고, 자료구조·알고리즘·OS·네트워크·DB
+  카테고리로 재구성해서 쓴다. 원문을 그대로 베끼지 않고 본인 언어로 재작성(저작권·중복 둘 다 이유).
 - 이 소스들로 쓴 글은 secondbrain 쪽에도 대응 노트를 만들어 둔다(양쪽 동기화).
 
 ## 카테고리
