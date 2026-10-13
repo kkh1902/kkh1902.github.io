@@ -17,9 +17,14 @@
 /* ------------------------------------------------------------------ *
  * Mac 터미널 느낌의 코드 블록 — Dracula 팔레트, 라이트/다크 모드와
  * 무관하게 항상 어두운 "터미널 창"으로 보이게 강제 오버라이드.
+ *
+ * Chirpy 기본 규칙이 `:root[data-bs-theme=light] .highlight .k` 처럼
+ * :root + 속성선택자로 이미 높은 명시도를 쓰고 있어서, 그보다 더 구체적인
+ * `:root[data-bs-theme] div[class^='language-'] ...` 형태로 감싸야 실제로
+ * 이긴다(그냥 `.highlight .k { !important }` 정도로는 밀림).
  * ------------------------------------------------------------------ */
 
-div[class^='language-'] {
+:root[data-bs-theme] div[class^='language-'] {
   .highlight,
   .highlight .w {
     background-color: #282a36 !important;
@@ -54,107 +59,107 @@ div[class^='language-'] {
   .highlight .lineno {
     color: #6272a4 !important;
   }
-}
 
-/* 토큰별 Dracula 색상 (rouge 클래스 기준) */
-.highlight {
-  .err {
-    color: #282a36 !important;
-    background-color: #ff5555 !important;
-  }
+  /* 토큰별 Dracula 색상 (rouge 클래스 기준) */
+  .highlight {
+    .err {
+      color: #282a36 !important;
+      background-color: #ff5555 !important;
+    }
 
-  .c,
-  .ch,
-  .cd,
-  .cm,
-  .cpf,
-  .c1,
-  .cs {
-    color: #6272a4 !important;
-  }
+    .c,
+    .ch,
+    .cd,
+    .cm,
+    .cpf,
+    .c1,
+    .cs {
+      color: #6272a4 !important;
+    }
 
-  .cp {
-    color: #ff79c6 !important;
-  }
+    .cp {
+      color: #ff79c6 !important;
+    }
 
-  .nt,
-  .k,
-  .kn,
-  .kp,
-  .kr,
-  .kv,
-  .o,
-  .ow {
-    color: #ff79c6 !important;
-  }
+    .nt,
+    .k,
+    .kn,
+    .kp,
+    .kr,
+    .kv,
+    .o,
+    .ow {
+      color: #ff79c6 !important;
+    }
 
-  .kc,
-  .kt,
-  .kd,
-  .no,
-  .m,
-  .mb,
-  .mf,
-  .mh,
-  .mi,
-  .il,
-  .mo,
-  .mx {
-    color: #bd93f9 !important;
-  }
+    .kc,
+    .kt,
+    .kd,
+    .no,
+    .m,
+    .mb,
+    .mf,
+    .mh,
+    .mi,
+    .il,
+    .mo,
+    .mx {
+      color: #bd93f9 !important;
+    }
 
-  .s,
-  .sb,
-  .sc,
-  .dl,
-  .sd,
-  .s2,
-  .sh,
-  .sx,
-  .s1,
-  .sa,
-  .ss {
-    color: #f1fa8c !important;
-  }
+    .s,
+    .sb,
+    .sc,
+    .dl,
+    .sd,
+    .s2,
+    .sh,
+    .sx,
+    .s1,
+    .sa,
+    .ss {
+      color: #f1fa8c !important;
+    }
 
-  .si,
-  .se {
-    color: #ff79c6 !important;
-  }
+    .si,
+    .se {
+      color: #ff79c6 !important;
+    }
 
-  .nn,
-  .nc {
-    color: #8be9fd !important;
-  }
+    .nn,
+    .nc {
+      color: #8be9fd !important;
+    }
 
-  .na,
-  .nf {
-    color: #50fa7b !important;
-  }
+    .na,
+    .nf {
+      color: #50fa7b !important;
+    }
 
-  .p,
-  .pi {
-    color: #f8f8f2 !important;
-  }
+    .p,
+    .pi {
+      color: #f8f8f2 !important;
+    }
 
-  .gi {
-    color: #50fa7b !important;
-  }
+    .gi {
+      color: #50fa7b !important;
+    }
 
-  .gd {
-    color: #ff5555 !important;
-    background-color: #44475a !important;
-  }
+    .gd {
+      color: #ff5555 !important;
+      background-color: #44475a !important;
+    }
 
-  .gh {
-    color: #bd93f9 !important;
-    background-color: #282a36 !important;
-    font-weight: bold;
-  }
+    .gh {
+      color: #bd93f9 !important;
+      background-color: #282a36 !important;
+      font-weight: bold;
+    }
 
-  /* 터미널 `$` 프롬프트 — 초록, 굵게 */
-  .gp {
-    color: #50fa7b !important;
-    font-weight: bold;
+    /* 터미널 `$` 프롬프트 — 초록, 굵게 */
+    .gp {
+      color: #50fa7b !important;
+      font-weight: bold;
+    }
   }
 }
