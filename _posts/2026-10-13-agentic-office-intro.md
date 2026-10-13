@@ -52,10 +52,11 @@ flowchart TD
 
 ## 최소 예시
 
-```bash
-# 로컬에서 실행하면 http://localhost:8760 에서 사무실 화면을 볼 수 있다
-python3 server/app.py
+```console
+$ python3 server/app.py
+# → http://localhost:8760 에서 사무실 화면을 볼 수 있다
 ```
+{: .nolineno }
 
 카드 하나를 "카드뉴스 만들어줘"로 등록하면 `card-news-planner`(기획) →
 `card-news-writer`(카피) → `card-news-designer`(비주얼) → `card-news-reviewer`(검수) →
