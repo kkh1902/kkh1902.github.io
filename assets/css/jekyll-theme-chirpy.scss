@@ -1,0 +1,160 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* ------------------------------------------------------------------ *
+ * Mac 터미널 느낌의 코드 블록 — Dracula 팔레트, 라이트/다크 모드와
+ * 무관하게 항상 어두운 "터미널 창"으로 보이게 강제 오버라이드.
+ * ------------------------------------------------------------------ */
+
+div[class^='language-'] {
+  .highlight,
+  .highlight .w {
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+  }
+
+  .code-header {
+    background-color: #282a36 !important;
+    border-bottom: 1px solid rgb(255 255 255 / 8%);
+
+    span {
+      color: #a0a4b8 !important;
+
+      i {
+        color: #a0a4b8 !important;
+      }
+    }
+
+    button i {
+      color: #a0a4b8 !important;
+    }
+
+    /* 빨강·노랑·초록 트래픽 라이트 점 (실제 macOS 터미널처럼) */
+    &::before {
+      background-color: #ff5f56 !important;
+      box-shadow:
+        1.25rem 0 0 #ffbd2e !important,
+        2.5rem 0 0 #27c93f !important;
+    }
+  }
+
+  .highlight .lineno {
+    color: #6272a4 !important;
+  }
+}
+
+/* 토큰별 Dracula 색상 (rouge 클래스 기준) */
+.highlight {
+  .err {
+    color: #282a36 !important;
+    background-color: #ff5555 !important;
+  }
+
+  .c,
+  .ch,
+  .cd,
+  .cm,
+  .cpf,
+  .c1,
+  .cs {
+    color: #6272a4 !important;
+  }
+
+  .cp {
+    color: #ff79c6 !important;
+  }
+
+  .nt,
+  .k,
+  .kn,
+  .kp,
+  .kr,
+  .kv,
+  .o,
+  .ow {
+    color: #ff79c6 !important;
+  }
+
+  .kc,
+  .kt,
+  .kd,
+  .no,
+  .m,
+  .mb,
+  .mf,
+  .mh,
+  .mi,
+  .il,
+  .mo,
+  .mx {
+    color: #bd93f9 !important;
+  }
+
+  .s,
+  .sb,
+  .sc,
+  .dl,
+  .sd,
+  .s2,
+  .sh,
+  .sx,
+  .s1,
+  .sa,
+  .ss {
+    color: #f1fa8c !important;
+  }
+
+  .si,
+  .se {
+    color: #ff79c6 !important;
+  }
+
+  .nn,
+  .nc {
+    color: #8be9fd !important;
+  }
+
+  .na,
+  .nf {
+    color: #50fa7b !important;
+  }
+
+  .p,
+  .pi {
+    color: #f8f8f2 !important;
+  }
+
+  .gi {
+    color: #50fa7b !important;
+  }
+
+  .gd {
+    color: #ff5555 !important;
+    background-color: #44475a !important;
+  }
+
+  .gh {
+    color: #bd93f9 !important;
+    background-color: #282a36 !important;
+    font-weight: bold;
+  }
+
+  /* 터미널 `$` 프롬프트 — 초록, 굵게 */
+  .gp {
+    color: #50fa7b !important;
+    font-weight: bold;
+  }
+}

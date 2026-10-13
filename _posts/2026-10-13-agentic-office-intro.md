@@ -53,8 +53,7 @@ flowchart TD
 ## 최소 예시
 
 ```console
-$ python3 server/app.py
-# → http://localhost:8760 에서 사무실 화면을 볼 수 있다
+$ python3 server/app.py  # → http://localhost:8760 에서 사무실 화면
 ```
 {: .nolineno }
 
