@@ -13,7 +13,7 @@ tags:
 
 ![Prompt Context Loop Engineering 변천사](/assets/img/posts/prompt-context-loop-engineering/header.png)
 
-## TL;DR
+## 한 줄 결론
 
 LLM을 잘 쓰는 기술의 중심은 3번 이동했다 — "질문 한 줄을 잘 쓰는 법"(Prompt Engineering)
 → "컨텍스트 윈도우 전체를 뭘로 채울지 설계하는 법"(Context Engineering) →
