@@ -10,7 +10,6 @@ order: 1
 
 **Contact**
 - Email: <hunjyhunji@gmail.com>
-- Phone: 010-7296-9664
 
 **Channel**
 - Blog: <https://kkh1902.tistory.com/>
@@ -26,6 +25,25 @@ order: 1
 현재는 2026.01부터 데이터 엔지니어링 과제 채점자로 활동하며 코드 품질, 모델링, 아키텍처 관점의 피드백을 제공하고 있습니다.
 
 ## Work Experience
+
+### [Metacode](https://metacodes.co.kr/) — AI 기업교육 강사 / 교육 기획·운영
+*2026. 03 - 현재*
+
+대기업·공공기관 대상 Claude·AI 활용 기업교육을 보조강사로 다수 진행했고, 삼성화재
+신입사원 AI 영상 교육은 메인 강사로 진행했습니다.
+
+- **삼성화재 신입사원 AI 영상 교육** (2026.09) — AI 교육 **메인 강사**
+- 삼성화재 Claude 활용 바이브 코딩 교육 (2026.06~) — AI 교육 보조 강사
+- SK hynix AI for Impact (2026.06) — AI 교육 보조 강사
+- LG U+ Claude 활용 바이브 코딩 (2026.06) — AI 교육 보조 강사
+- 한화에너지 Claude 활용 바이브 코딩 교육 (2026.10) — AI 교육 보조 강사
+- 구미 반도체단지 Claude 활용 교육 (2026.08) — AI 교육 보조 강사
+- 대구디지털혁신진흥원 바이브 코딩 (2026.06) — AI 교육 보조 강사
+- 상미당 홀딩스 n8n 활용 업무자동화 (2026.05) — AI 교육 보조 강사
+- AI 엔지니어 부트캠프 / 데이터 분석 부트캠프 운영 (2026.03~) — 교육 기획 및 운영 담당
+
+> Tech Stack: Claude, Claude Code, n8n, Vibe Coding, 강의 기획
+{: .prompt-info }
 
 ### [Metacode](https://metacodes.co.kr/) — 과제 채점 및 코드 리뷰
 *2026. 01 - 현재*
