@@ -67,7 +67,7 @@ tags:
 위 7단계 구조를 처음부터 끝까지 그대로 적용해 쓴 실제 포스트:
 
 - [캐시(Cache)란 무엇인가](/posts/cache-basics/) — CS 개념 예시
-- [Agentic_office — 혼자 운영하는 AI 에이전트 회사](/posts/agentic-office-intro/) — Meta(프로젝트 설명) 예시
+- [회사란? Agentic_office — 혼자 운영하는 AI 에이전트 회사](/posts/agentic-office-intro/) — Meta(프로젝트 설명) 예시
 
 ## 이미지
 

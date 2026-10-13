@@ -1,5 +1,5 @@
 ---
-title: "Agentic_office — 혼자 운영하는 AI 에이전트 회사"
+title: "회사란? Agentic_office — 혼자 운영하는 AI 에이전트 회사"
 date: '2026-10-13 11:00:00 +0900'
 categories:
 - Meta
@@ -7,6 +7,7 @@ tags:
 - Agentic_office
 - 자동화
 - 프로젝트
+mermaid: true
 ---
 
 ![Agentic_office 개념 일러스트](/assets/img/posts/agentic-office-intro/header.png)
@@ -33,12 +34,12 @@ Agentic_office는 콘텐츠 제작·업무 자동화를 담당하는 수십 개�
 
 ## 구조 다이어그램
 
-```
-[사람(대표)] → [카드 생성] → [에이전트 실행(claude CLI)]
-                                   ↓
-                      [부서별 파이프라인: 기획 → 제작 → 검수 → 발행]
-                                   ↓
-                         [채널로 발행: YouTube/Instagram/Threads 등]
+```mermaid
+flowchart TD
+    A[사람 대표] --> B[카드 생성]
+    B --> C[에이전트 실행<br/>claude CLI]
+    C --> D[부서별 파이프라인<br/>기획 → 제작 → 검수 → 발행]
+    D --> E[채널로 발행<br/>YouTube / Instagram / Threads]
 ```
 
 ## 동작 원리
