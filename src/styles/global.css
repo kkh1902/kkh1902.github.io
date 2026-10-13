@@ -10,7 +10,7 @@
   --sidebar-bg: #fbfbfd;
   --sidebar-w: 252px;
   --radius: 12px;
-  color-scheme: light dark;
+  color-scheme: light;
 
   --cat-ai-dev: #4f46e5;
   --cat-cs: #7c3aed;
@@ -18,8 +18,9 @@
   --cat-career: #d97706;
 }
 
+/* 다크모드 비활성화 — 항상 흰 배경(라이트) 고정 */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root[data-force-light-disabled] {
     --bg: #0d0e12;
     --fg: #e7e8ec;
     --muted: #9aa0ab;
