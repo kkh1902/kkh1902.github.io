@@ -1,0 +1,35 @@
+---
+import { CATEGORY_LABEL } from '../consts';
+
+interface Props {
+  slug: string;
+  title: string;
+  description: string;
+  pubDate: Date;
+  category: string;
+  tags: string[];
+}
+
+const { slug, title, description, pubDate, category, tags } = Astro.props;
+const formatted = pubDate.toLocaleDateString('ko-KR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<li class="post-item">
+  <span class="category-badge">{CATEGORY_LABEL[category] ?? category}</span>
+  <h2><a href={`/blog/${slug}/`}>{title}</a></h2>
+  <p class="meta">{formatted}</p>
+  <p class="desc">{description}</p>
+  {
+    tags.length > 0 && (
+      <p>
+        {tags.map((t) => (
+          <span class="tag">#{t}</span>
+        ))}
+      </p>
+    )
+  }
+</li>

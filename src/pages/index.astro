@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const recent = posts.slice(0, 5);
+---
+
+<BaseLayout>
+  <section>
+    <h1>안녕하세요, 김기훈입니다.</h1>
+    <p>
+      배관 현장에서 AI 엔지니어로 전환해, 기업 AI 교육과 자동화 에이전트 시스템을
+      만들고 있습니다. 이 블로그엔 실제로 만들고 운영한 프로젝트, 그 과정에서 배운
+      AI 개발 지식, 커리어 전환 기록을 남깁니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>최근 글</h2>
+    <ul class="post-list">
+      {
+        recent.map((post) => (
+          <PostCard
+            slug={post.id}
+            title={post.data.title}
+            description={post.data.description}
+            pubDate={post.data.pubDate}
+            category={post.data.category}
+            tags={post.data.tags}
+          />
+        ))
+      }
+    </ul>
+    <p><a href="/blog/">전체 글 보기 →</a></p>
+  </section>
+</BaseLayout>
