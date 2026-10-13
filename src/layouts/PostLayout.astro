@@ -20,7 +20,7 @@ const formatted = (d: Date) =>
 <BaseLayout title={title} description={description}>
   <article class="post-body">
     <p>
-      <span class="category-badge">{CATEGORY_LABEL[category] ?? category}</span>
+      <span class={`category-badge cat-${category}`}>{CATEGORY_LABEL[category] ?? category}</span>
     </p>
     <h1>{title}</h1>
     <p class="meta">

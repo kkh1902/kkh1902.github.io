@@ -10,9 +10,10 @@ const recent = posts.slice(0, 5);
 ---
 
 <BaseLayout>
-  <section>
+  <section class="hero">
+    <p class="hero-eyebrow">AI Engineer · kkh1902</p>
     <h1>안녕하세요, 김기훈입니다.</h1>
-    <p>
+    <p class="hero-desc">
       배관 현장에서 AI 엔지니어로 전환해, 기업 AI 교육과 자동화 에이전트 시스템을
       만들고 있습니다. 이 블로그엔 실제로 만들고 운영한 프로젝트, 그 과정에서 배운
       AI 개발 지식, 커리어 전환 기록을 남깁니다.
@@ -20,7 +21,7 @@ const recent = posts.slice(0, 5);
   </section>
 
   <section>
-    <h2>최근 글</h2>
+    <h2 class="section-title">최근 글</h2>
     <ul class="post-list">
       {
         recent.map((post) => (

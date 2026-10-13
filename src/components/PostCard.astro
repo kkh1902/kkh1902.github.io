@@ -19,7 +19,7 @@ const formatted = pubDate.toLocaleDateString('ko-KR', {
 ---
 
 <li class="post-item">
-  <span class="category-badge">{CATEGORY_LABEL[category] ?? category}</span>
+  <span class={`category-badge cat-${category}`}>{CATEGORY_LABEL[category] ?? category}</span>
   <h2><a href={`/blog/${slug}/`}>{title}</a></h2>
   <p class="meta">{formatted}</p>
   <p class="desc">{description}</p>

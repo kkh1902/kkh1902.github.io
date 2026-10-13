@@ -8,7 +8,16 @@ export interface TaxonomyNode {
 }
 
 export const TAXONOMY: TaxonomyNode[] = [
-  { key: 'ai-dev', label: 'AI 개발' },
+  {
+    key: 'ai-dev',
+    label: 'AI 개발',
+    children: [
+      { key: 'claude', label: 'Claude' },
+      { key: 'agent-engineering', label: 'Agent Engineering' },
+      { key: 'mcp-tools', label: 'MCP·외부도구' },
+      { key: 'prompt-engineering', label: '프롬프트 엔지니어링' },
+    ],
+  },
   {
     key: 'cs',
     label: 'CS 지식',

@@ -3,6 +3,7 @@ title: "에이전트 지시서, 코드처럼 리팩터링하기"
 description: "Claude Code용 지시서(CLAUDE.md류)가 길어질 때 가독성과 일관성을 지키려고 쓰는 방법들."
 pubDate: 2026-10-13
 category: ai-dev
+subcategory: agent-engineering
 tags: ["Claude Code", "프롬프트엔지니어링", "AI개발"]
 ---
 
