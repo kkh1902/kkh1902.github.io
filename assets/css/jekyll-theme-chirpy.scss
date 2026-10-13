@@ -25,34 +25,50 @@
  * ------------------------------------------------------------------ */
 
 :root[data-bs-theme] div[class^='language-'] {
+  border-radius: 14px !important;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 25%) !important;
+  overflow: hidden;
+
   .highlight,
   .highlight .w {
     background-color: #282a36 !important;
     color: #f8f8f2 !important;
   }
 
+  .highlight {
+    padding: 1rem 0.5rem !important;
+  }
+
   .code-header {
     background-color: #282a36 !important;
-    border-bottom: 1px solid rgb(255 255 255 / 8%);
+    border-bottom: none;
+    height: 2.75rem !important;
 
+    /* 라벨 텍스트·아이콘은 숨기고 점 3개만 남겨 진짜 터미널 창처럼 */
     span {
-      color: #a0a4b8 !important;
+      visibility: hidden;
+    }
+
+    button {
+      opacity: 0.35;
+      transition: opacity 0.15s ease;
 
       i {
         color: #a0a4b8 !important;
       }
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
-    button i {
-      color: #a0a4b8 !important;
-    }
-
-    /* 빨강·노랑·초록 트래픽 라이트 점 (실제 macOS 터미널처럼) */
+    /* 빨강·노랑·초록 트래픽 라이트 점 (실제 macOS 터미널처럼, 여백 넉넉하게) */
     &::before {
+      margin-left: 1.25rem !important;
       background-color: #ff5f56 !important;
       box-shadow:
-        1.25rem 0 0 #ffbd2e !important,
-        2.5rem 0 0 #27c93f !important;
+        1.4rem 0 0 #ffbd2e !important,
+        2.8rem 0 0 #27c93f !important;
     }
   }
 
