@@ -1,7 +1,7 @@
 ---
 title: "첫 포스트"
 date: 2026-01-21 12:00:00 +0900
-categories: [Blog]
+categories: [Meta]
 tags: [hello]
 ---
 
